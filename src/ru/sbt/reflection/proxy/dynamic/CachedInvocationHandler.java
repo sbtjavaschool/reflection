@@ -28,6 +28,8 @@ public class CachedInvocationHandler implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+        if (!method.isAnnotationPresent(Cache.class)) return invoke(method, args);
+
         if (!resultByArg.containsKey(key(method, args))) {
             System.out.println("Delegation of " + method.getName());
             Object result = invoke(method, args);

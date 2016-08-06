@@ -10,4 +10,9 @@ public class LoaderImpl implements Loader {
         }
         return pageNumber + " " + url;
     }
+
+    @Override
+    public String load(int pageNumber) {
+        return String.valueOf(pageNumber);
+    }
 }
