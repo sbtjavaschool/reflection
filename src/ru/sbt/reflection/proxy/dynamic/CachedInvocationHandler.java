@@ -1,12 +1,13 @@
 package ru.sbt.reflection.proxy.dynamic;
 
-import ru.sbt.reflection.proxy.simple.Loader;
-
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import static java.lang.ClassLoader.getSystemClassLoader;
 import static java.util.Arrays.asList;
