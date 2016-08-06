@@ -21,6 +21,11 @@ public class CachedLoader implements Loader {
         return resultByArg.get(key(pageNumber, url));
     }
 
+    @Override
+    public String load(int pageNumber) {
+        return null;
+    }
+
     private String key(int pageNumber, String url) {
         return pageNumber + "|" + url;
     }
