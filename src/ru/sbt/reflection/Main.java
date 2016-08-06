@@ -5,8 +5,9 @@ import ru.sbt.reflection.utils.ReflectionUtils;
 
 public class Main {
     public static void main(String[] args) {
-        ReflectionUtils.printAllMethods(new Person("Alex", 1));
-
+        Person alex = new Person("Alex", 1);
+        ReflectionUtils.printAllMethods(alex);
+        ReflectionUtils.invokeMethod(alex, "getAge");
 
 //        hierarchy();
     }
