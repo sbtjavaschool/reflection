@@ -1,4 +1,4 @@
-package ru.sbt.reflection.proxy;
+package ru.sbt.reflection.proxy.simple;
 
 import java.util.HashMap;
 import java.util.Map;
